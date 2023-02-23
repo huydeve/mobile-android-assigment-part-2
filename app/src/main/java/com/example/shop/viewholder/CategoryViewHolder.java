@@ -5,7 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.example.shop.model.Category;
+import com.example.shop.entity.Category;
 import com.example.shop.R;
 
 public class CategoryViewHolder extends RecyclerView.ViewHolder {

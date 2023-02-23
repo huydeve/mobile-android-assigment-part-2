@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.example.shop.model.Category;
+import com.example.shop.entity.Category;
 import com.example.shop.viewholder.CategoryViewHolder;
 import com.example.shop.DetailCategoryActivity;
 import com.example.shop.R;

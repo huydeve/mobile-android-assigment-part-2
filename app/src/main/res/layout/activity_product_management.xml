@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".tab.CategoryTab">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <EditText
+                android:id="@+id/product_name_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="name"
+                />
+        <EditText
+                android:id="@+id/product_description_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="description"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+        <EditText
+                android:text=""
+                android:id="@+id/product_price_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="price"
+                />
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/create_btn"
+                android:text="Create"
+                />
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

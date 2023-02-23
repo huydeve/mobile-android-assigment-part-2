@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.example.shop.model.Category;
+import com.example.shop.entity.Category;
 import com.example.shop.adapter.CategoryAdapter;
 import com.example.shop.R;
 
@@ -72,7 +72,6 @@ public class CategoryTab extends Fragment {
         createList();
         categoryAdapter = new CategoryAdapter(getContext(), categories);
         View view = inflater.inflate(R.layout.fragment_category_tab, container, false);
-
         recyclerViewCategories = view.findViewById(R.id.recyclerView_categories);
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),3);
@@ -86,12 +85,12 @@ public class CategoryTab extends Fragment {
 
     private void createList() {
 
-        categories.add(new Category("Accessories",R.drawable.ic_accessories));
-        categories.add(new Category("Clothes",R.drawable.ic_clothes));
-        categories.add(new Category("Baby",R.drawable.ic_baby));
-        categories.add(new Category("Game",R.drawable.ic_game));
-        categories.add(new Category("Home",R.drawable.ic_home));
-        categories.add(new Category("Laptop",R.drawable.ic_laptop));
+        categories.add(new Category("Accessories",R.drawable.ic_accessories,"09999999"));
+        categories.add(new Category("Accessories",R.drawable.ic_accessories,"09999999"));
+        categories.add(new Category("Accessories",R.drawable.ic_accessories,"09999999"));
+        categories.add(new Category("Accessories",R.drawable.ic_accessories,"09999999"));
+        categories.add(new Category("Accessories",R.drawable.ic_accessories,"09999999"));
+
 
 
     }
